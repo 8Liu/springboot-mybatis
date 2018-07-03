@@ -1,0 +1,15 @@
+server:
+  context-path: /springboot_mybatis
+  port: 8080
+  servlet-path: "*.do"
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/test?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password:
+
+mybatis:
+  mapper-locations: classpath:com/liudehuang/mapper/*Mapper.xml
+  config-location: classpath:mybatis/mybatis-config.xml
+ 
