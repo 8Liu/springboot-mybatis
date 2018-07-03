@@ -3,12 +3,25 @@ server:
   port: 8080
   servlet-path: "*.do"
 spring:
+  #数据源的配置
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1/test?useUnicode=true&characterEncoding=utf-8
     username: root
     password:
+  #redis的配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 
+  cache:
+    type: redis
+   
 
+    
+    
+    
+    
 mybatis:
   mapper-locations: classpath:com/liudehuang/mapper/*Mapper.xml
   config-location: classpath:mybatis/mybatis-config.xml
