@@ -11,7 +11,15 @@
 
 	<name>springboot_mybatis</name>
 	<description>Demo project for Spring Boot</description>
-
+	
+	<repositories>
+		<repository>
+			<id>nexus</id>
+			<name>djcps maven</name>
+			<url>http://192.168.0.236:8081/repository/maven-public/</url>
+		</repository>
+	</repositories>dis
+	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -50,8 +58,12 @@
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-data-redis</artifactId>
-		</dependency>		
+		</dependency>
+		
+				
 	</dependencies>
+
+	
 
 	<profiles>
 		<profile>
